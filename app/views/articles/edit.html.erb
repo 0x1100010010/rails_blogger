@@ -1,5 +1,4 @@
 <h1>Edit an Article</h1>
-<%= render partial: 'form' %>
 <%= form_for(@article) do |f| %>
   <ul>
   <% @article.errors.full_messages.each do |error| %>
@@ -18,3 +17,4 @@
     <%= f.submit %>
   </p>
 <% end %>
+<%= render partial: 'form' %>
